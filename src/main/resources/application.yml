@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sh-library-sys
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  profiles:
+    # 激活profiles
+    active: local
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 8080
