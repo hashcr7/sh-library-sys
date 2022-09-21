@@ -10,7 +10,7 @@
 4. mybatis-plus
 5. swagger
 ## 测试流程
-1. 下载源代码
+1. 下载源代码:git clone -b master git@github.com:hashcr7/sh-library-sys.git
 2. maven下载依赖jar包
 3. 启动项目
 4. 访问swagger，地址：http://localhost:8080/swagger-ui.html
