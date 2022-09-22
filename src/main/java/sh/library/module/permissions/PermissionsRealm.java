@@ -58,11 +58,13 @@ public class PermissionsRealm extends AuthorizingRealm {
         //从shiro框架中拿到token(账号密码加密而成)
         UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
 
-        //从token中拿出账号密码和数据库中的比较
+        //账号比较
         AccountDO accountDO = accountService.getAccountByUsername(token.getUsername());
         if (accountDO != null) {
+            //密码比较
             return new SimpleAuthenticationInfo(accountDO, accountDO.getPassword(), getName());
         }
+        //返回null时，shiro内部判定为账号错误
         return null;
     }
 
