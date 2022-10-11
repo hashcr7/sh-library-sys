@@ -12,7 +12,7 @@ import sh.library.module.permissions.PermissionsRealm;
 /**
  * Shiro 配置类
  *
- * @author huangqc
+ * @author huangqc 
  * @date 2022/9/21
  */
 @Configuration
