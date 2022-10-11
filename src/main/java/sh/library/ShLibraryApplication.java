@@ -16,5 +16,6 @@ public class ShLibraryApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ShLibraryApplication.class, args);
+        System.out.print(args);
     }
 }
